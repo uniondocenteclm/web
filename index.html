@@ -15,24 +15,20 @@
     
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Rojo corporativo similar a JCCM pero con identidad propia */
         .bg-junta { background-color: #990000; } 
         .text-junta { color: #990000; }
         .border-junta { border-color: #990000; }
         
-        /* Clase para justificar texto de forma legible */
         .text-justify-custom {
             text-align: justify;
             hyphens: auto;
         }
         
-        /* Decoración sección legal */
         .legal-card {
             border-left: 4px solid #990000;
             background-color: #fff;
         }
         
-        /* Efecto suave en los botones */
         .btn-action {
             transition: all 0.3s ease;
         }
@@ -44,17 +40,33 @@
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow border-b border-gray-200 sticky top-0 z-50">
+    <div class="bg-junta text-white py-3 md:py-2 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-3 text-sm">
+            <p class="font-semibold text-center md:text-left leading-tight">
+                🔥 ¡FIRMA LA PETICIÓN! Exige medios digitales dignos para el profesorado CLM.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-2">
+                <a href="https://c.org/Fg5cW58bTs" target="_blank" class="bg-white text-junta hover:bg-gray-100 font-bold px-4 py-2 rounded-full text-xs md:text-sm whitespace-nowrap btn-action">
+                    Firmar Petición →
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ULhp-1BL5VGGB8eHQs-OCqVEFb_90LAtssLXIa6TsxNlFA/viewform" target="_blank" class="text-white hover:text-gray-200 px-4 py-2 rounded-full text-xs md:text-sm whitespace-nowrap border border-white hover:border-gray-200 transition">
+                    Ver Encuesta
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="bg-white shadow border-b border-gray-200 sticky top-[7.2rem] md:top-[3.2rem] z-40"> 
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="font-extrabold text-lg md:text-xl flex items-center gap-2 text-gray-900 tracking-tight">
-                <img src="logo-union-docente-clm.png" alt="Logo Unión Docente CLM" class="h-15 md:h-16"> 
+                <img src="logo-union-docente-clm.png" alt="Logo Unión Docente CLM" class="h-8 md:h-9"> 
             </div>
             
             <div class="hidden md:flex space-x-6 text-sm font-bold text-gray-600">
                 <a href="#ineficacia" class="hover:text-junta transition">Ineficacia Actual</a>
                 <a href="#riesgos" class="hover:text-junta transition">Riesgos Medios Propios</a>
                 <a href="#legal" class="hover:text-junta transition">Marco Legal</a>
-                <a href="#firma" class="bg-gray-900 text-white px-5 py-2 rounded hover:bg-junta transition">Unirse</a>
+                <a href="https://c.org/Fg5cW58bTs" target="_blank" class="bg-gray-900 text-white px-5 py-2 rounded hover:bg-junta transition btn-action">Firma la Petición</a>
             </div>
         </div>
     </nav>
@@ -74,11 +86,11 @@
                         Desde <strong>Unión Docente CLM</strong> denunciamos que la Junta exige una gestión integral digital sin proporcionar la herramienta fundamental: <strong>un equipo individual para cada docente</strong>. Exigimos el cumplimiento inmediato de la normativa de Riesgos Laborales y Protección de Datos.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#firma" class="btn-action bg-junta text-center text-white font-bold py-4 px-8 rounded shadow-lg hover:bg-red-900">
-                            Firmar Petición
+                        <a href="https://c.org/Fg5cW58bTs" target="_blank" class="btn-action bg-junta text-center text-white font-bold py-4 px-8 rounded shadow-lg hover:bg-red-900">
+                            Firmar Petición Ahora
                         </a>
-                        <a href="#ineficacia" class="btn-action bg-white text-center border border-gray-300 text-gray-700 font-bold py-4 px-8 rounded hover:bg-gray-50">
-                            Leer Argumentario
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ULhp-1BL5VGGB8eHQs-OCqVEFb_90LAtssLXIa6TsxNlFA/viewform" target="_blank" class="btn-action bg-white text-center border border-gray-300 text-gray-700 font-bold py-4 px-8 rounded hover:bg-gray-50">
+                            Participar en Encuesta
                         </a>
                     </div>
                 </div>
@@ -93,13 +105,28 @@
         </div>
     </header>
 
+    <section class="bg-blue-600 text-white py-12 md:py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+                ¡Tu Voz Cuenta! Participa en la Encuesta <br>
+                <span class="block mt-2">"Radiografía Digital Docente CLM"</span>
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Ayúdanos a recopilar datos irrefutables sobre el uso de medios digitales en la docencia de Castilla-La Mancha. Tus respuestas anónimas son la base de nuestra reclamación.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ULhp-1BL5VGGB8eHQs-OCqVEFb_90LAtssLXIa6TsxNlFA/viewform" target="_blank" class="btn-action bg-yellow-300 text-blue-800 hover:bg-yellow-200 font-bold py-4 px-10 rounded-full text-xl shadow-lg flex items-center justify-center gap-3 mx-auto max-w-sm">
+                <span>📝</span> Empezar Encuesta
+            </a>
+            <p class="text-sm mt-6 opacity-80">Completamente anónima y esencial para la defensa de nuestros derechos.</p>
+        </div>
+    </section>
     <section id="ineficacia" class="py-24 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="text-junta font-bold tracking-wider uppercase text-sm">El Problema Operativo</span>
                 <h2 class="text-3xl font-bold mt-2 text-gray-900">¿Por qué el "ordenador de centro" ha fracasado?</h2>
                 <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                    La estrategia de dotar aulas o departamentos con equipos compartidos ignora la realidad de nuestra profesión.
+                    La estrategia de dotar aulas o departamentos con equipos fijos o compartidos ignora la realidad de nuestra profesión.
                 </p>
             </div>
 
@@ -262,16 +289,16 @@
 
     <section id="firma" class="py-24 bg-gray-50 border-t border-gray-200 text-center">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Por la dignidad de nuestra profesión</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">¡Tu firma es clave! Por la dignidad de nuestra profesión</h2>
             <p class="text-gray-600 mb-10 text-lg text-justify-custom md:text-center">
                 Es hora de acabar con la precariedad digital. Firma con <strong>Unión Docente CLM</strong> para exigir una partida presupuestaria específica para la dotación individual de equipos informáticos.
             </p>
             
             <div class="flex flex-col gap-4 justify-center items-center">
-                <button class="btn-action w-full md:w-auto bg-junta hover:bg-red-900 text-white text-xl font-bold py-5 px-12 rounded shadow-2xl flex items-center justify-center gap-3">
-                    <span>✍️</span> FIRMAR MANIFIESTO AHORA
-                </button>
-                <p class="text-xs text-gray-500 mt-4 max-w-md">Al firmar, apoyas las acciones de Unión Docente CLM ante la Consejería. Tus datos serán tratados con estricta confidencialidad.</p>
+                <a href="https://c.org/Fg5cW58bTs" target="_blank" class="btn-action w-full md:w-auto bg-junta hover:bg-red-900 text-white text-xl font-bold py-5 px-12 rounded shadow-2xl flex items-center justify-center gap-3">
+                    <span>✍️</span> FIRMAR PETICIÓN AHORA
+                </a>
+                <p class="text-xs text-gray-500 mt-4 max-w-md">Al firmar, apoyas las acciones de Unión Docente CLM ante la Consejería. Tus datos serán tratados con estricta confidencialidad por Change.org.</p>
             </div>
         </div>
     </section>
@@ -288,6 +315,60 @@
             </div>
         </div>
     </footer>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 md:p-6 shadow-lg z-[9999] hidden">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-center md:text-left leading-relaxed">
+                Utilizamos cookies para mejorar tu experiencia de navegación y analizar el tráfico de nuestra web. Al continuar navegando, aceptas su uso. Para más información, consulta nuestra 
+                <a href="#politica-cookies" class="font-bold underline hover:text-junta transition">Política de Cookies</a>.
+            </p>
+            <button id="accept-cookies" class="bg-junta hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full text-sm whitespace-nowrap btn-action">
+                Aceptar Cookies
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookiesBtn = document.getElementById('accept-cookies');
+            const cookieName = 'udclm_cookie_consent';
+
+            // Función para establecer una cookie
+            function setCookie(name, value, days) {
+                let expires = '';
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/; SameSite=Lax';
+            }
+
+            // Función para obtener una cookie
+            function getCookie(name) {
+                const nameEQ = name + '=';
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            // Comprobar si ya se ha aceptado
+            if (!getCookie(cookieName)) {
+                cookieBanner.style.display = 'block';
+            }
+
+            // Manejar la aceptación
+            acceptCookiesBtn.addEventListener('click', () => {
+                setCookie(cookieName, 'accepted', 365); // Guarda el consentimiento por 1 año
+                cookieBanner.style.display = 'none';
+            });
+        });
+    </script>
 
 </body>
 </html>
