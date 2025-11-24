@@ -320,7 +320,7 @@
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <p class="text-sm text-center md:text-left leading-relaxed">
                 Utilizamos cookies para mejorar tu experiencia de navegación y analizar el tráfico de nuestra web. Al continuar navegando, aceptas su uso. Para más información, consulta nuestra 
-                <a href="#politica-cookies" class="font-bold underline hover:text-junta transition">Política de Cookies</a>.
+                <a href="politica-cookies.html" class="font-bold underline hover:text-junta transition">Política de Cookies</a>.
             </p>
             <button id="accept-cookies" class="bg-junta hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full text-sm whitespace-nowrap btn-action">
                 Aceptar Cookies
@@ -334,7 +334,6 @@
             const acceptCookiesBtn = document.getElementById('accept-cookies');
             const cookieName = 'udclm_cookie_consent';
 
-            // Función para establecer una cookie
             function setCookie(name, value, days) {
                 let expires = '';
                 if (days) {
@@ -345,7 +344,6 @@
                 document.cookie = name + '=' + (value || '') + expires + '; path=/; SameSite=Lax';
             }
 
-            // Función para obtener una cookie
             function getCookie(name) {
                 const nameEQ = name + '=';
                 const ca = document.cookie.split(';');
@@ -357,12 +355,10 @@
                 return null;
             }
 
-            // Comprobar si ya se ha aceptado
             if (!getCookie(cookieName)) {
                 cookieBanner.style.display = 'block';
             }
 
-            // Manejar la aceptación
             acceptCookiesBtn.addEventListener('click', () => {
                 setCookie(cookieName, 'accepted', 365); // Guarda el consentimiento por 1 año
                 cookieBanner.style.display = 'none';
